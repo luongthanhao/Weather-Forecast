@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;/*loi len dau*/
+    justify-content: center;/*center but locate on top*/
+    align-items: center;/*absolute in middle of website*//*margin la tren duoi; trai phai nhung ma mat thoi gian lam , cai nay cho le */
+    background: linear-gradient(to top, rgba(0,0,0,0.7) , rgba(0,0,0,0.6)), url(./images/night-fall.jpg) no-repeat center/cover;
+    /*bg body la img nhung ba duoc boi them cai mang mo mo ao ao de cho dep ; mo ao tu duoi di len nhe*/
+}
+
+#weather{/*if weather don't have a height, so which mean you can stretched to any kind of height size you want*/
+    width: 350px;
+    padding: 30px 20px;/*mieng dem ; quy tac tren duoi ; trai phai nhung ma 'o ben trong'*/
+    /*height: 150px;*/
+    border-radius: 10px;
+    background: url(./images/night-fall.jpg) no-repeat center/cover;
+}
+
+.hot{
+    background: linear-gradient(to top, rgba(0,0,0,0.7) , rgba(0,0,0,0.6)), url(./images/night-fall.jpg) no-repeat center/cover;
+}
+
+.hot #weather{
+    background: url(./images/night-fall.jpg) no-repeat center/cover;
+}
+
+.cold{
+    background: linear-gradient(to top, rgba(0,0,0,0.7) , rgba(0,0,0,0.6)), url(./images/night.png) no-repeat center/cover;
+}
+
+.cold #weather{
+    background: url(./images/night.png) no-repeat center/cover;
+}
+
+.cool{
+    background: linear-gradient(to top, rgba(0,0,0,0.7) , rgba(0,0,0,0.6)), url(./images/morning.jpg) no-repeat center/cover;
+}
+
+.cool #weather{
+    background: url(./images/morning.jpg) no-repeat center/cover;
+}
+
+.warm{
+    background: linear-gradient(to top, rgba(0,0,0,0.7) , rgba(0,0,0,0.6)), url(./images/everning.jpg) no-repeat center/cover;
+}
+
+.warm #weather{
+    background: url(./images/everning.jpg) no-repeat center/cover;
+}
+
+.search{
+    width: 100%;
+    padding: 10px 20px;/*mieng dem nhung ma ben trong*/
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 0 15px 0 15px;/*goc cung ben trai theo chieu kim dong ho ; bear in mind: don't use " ; "*/
+    box-shadow: 0 5px 4px rgba(0,0,0,0.3);/*0 : truc 'X' , 5px: truc 'Y' kieu hinh hoc khong gian ay ; 4px: do dam nhat ; rgba: do mo*/
+    /*box-sahdow kieu nhu tao ra cai bong o phia duoi cai input ay*/
+    transition: 0.7s;/*time of transistion*/
+}
+
+.search:focus{/*animation after... maybe after 'click' i guess*/
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px 0 15px 0;
+}
+
+.content{
+    text-align: center;
+    color: white;
+    margin: 30px 0;/*tren duoi trai phai*//*top bot left right*/
+    transition: 0.7s;
+}
+
+.capital{/*cai nay nam trong h1*/
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.7);/*nhu tren: truc X , Truc Y , Do dam nhat , Do mo*//*do lech giua Truc X va Y*/
+}
+
+.time{
+    margin: 15px auto;
+    font-size: 19px;
+}
+
+.temperature{
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 3px 3px 1px rgba(0,0,0,0.7);/*nhu tren: tru X , truc Y , do dam nhat , Do mo*//*do lech giua truc X va Y*/
+    background: rgba(255, 255, 255, 0.3);/* background trong suot*/
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.3);/*nhu tren: tru X , truc Y , do dam nhat , Do mo*//*do lech giua truc X va Y*/
+    border: none;
+    border-radius: 10px;
+    margin: 0 70px;/*thu hep cai le khung lai ; tu thay doi thong so se de hieu hon*/
+    padding: 10px;/*mieng dem ben trong ; hoac phong phao tu ben trong :)*/
+}
+
+.short_desc{
+    font-size: 39px;
+    font-weight: bold;
+    margin: 20px auto;
+    text-shadow: 3px 3px 2.5px rgba(0,0,0,0.7);/*nhu tren: tru X , truc Y , do dam nhat , Do mo*//*do lech giua truc X va Y*/
+}
+
+.more_desc{/*chinh full the lon*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.more_desc div{/*chinh tung the nho*/
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.more_desc div i{
+    margin: 10px 0;
+}
+
+.more_desc span{
+    font-size: 15px;
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}

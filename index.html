@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forcast</title>
+</head>
+<body>
+    <div id="weather">
+        <input type="text" class="search">
+        <div class="content">
+            <h1 class="capital">
+                <span class="city">Ha Noi</span><!-- su dung span de noi lien 1 hang -->
+                <span>,</span>
+                <span class="country">VN</span>
+            </h1>
+            <div class="time">10/06/2021 0:00:00 AM</div>
+            <div class="temperature">
+                <span class="value">23<sup>o</sup>C</span>
+            </div>
+            <div class="short_desc">cloud</div>
+            <div class="more_desc">
+                <div class="visibility">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>1000M</span>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>level 7</span>
+                </div>
+                <div class="sun">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <span>20 (%)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
